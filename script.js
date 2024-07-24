@@ -1,3 +1,4 @@
+//array de especialidades para informacion variable
 let especialidad = ['Radiologia','Traumatologia','Dental']
 //objetos
 let radiologia = [{
@@ -131,7 +132,7 @@ let dental = [
     prevision: 'Isapre'
   },
 ]
-
+//escritura de texto y tabla, primer y ultimo paciente de especialidad
 document.write('<h1>Estadisticas centro medico ñuñoa</h1>'); 
 document.write(`<h2>Pacientes ${especialidad[0]}</h2><table id='tabla-pacientes-${especialidad[0]}'></table>`)
 document.write(`<p><strong>Primera Atención: ${radiologia[0].paciente} - ${radiologia[0].prevision} | Última atención: ${radiologia[4].paciente} - ${radiologia[4].prevision}</p></strong>`)
@@ -143,7 +144,7 @@ document.write(`<p><strong>Primera Atención: ${dental[0].paciente} - ${dental[0
 
 
 
-
+//funcion de llenado de datos en cada especialidad
 function tablaRadiografia(){
   let tabla = "<tbody><tr><th>Hora</th><th>Paciente</th><th>Rut</th><th>Especialista</th><th>Previsión</th></tr>";
 
